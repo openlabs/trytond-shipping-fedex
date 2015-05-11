@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<data>
+    <xpath expr="/form/notebook/page[@id=&quot;shipments&quot;]" position="after">
+        <page string="FedEx" states="{'invisible': Not(Bool(Eval('is_fedex_shipping')))}" id="ups">
+            <label name="fedex_drop_off_type"/>
+            <field name="fedex_drop_off_type" widget='selection'/>
+            <label name="fedex_packaging_type"/>
+            <field name="fedex_packaging_type" widget='selection'/>
+            <label name="fedex_service_type"/>
+            <field name="fedex_service_type" widget='selection'/>
+            <button name="update_fedex_shipment_cost" string="Update Shipment Cost" icon="tryton-ok"/> 
+        </page>
+    </xpath>
+</data>

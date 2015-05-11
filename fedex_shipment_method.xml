@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data>
+        <!-- Service Type -->
+        <record id="service_europe_first_international_priority" model="fedex.shipment.method">
+            <field name="name">EUROPE FIRST INTERNATIONAL PRIORITY</field>
+            <field name="value">EUROPE_FIRST_INTERNATIONAL_PRIORITY</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_fedex_1_day_freight" model="fedex.shipment.method">
+            <field name="name">FEDEX 1 DAY FREIGHT</field>
+            <field name="value">FEDEX_1_DAY_FREIGHT</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_fedex_2_day" model="fedex.shipment.method">
+            <field name="name">FEDEX 2 DAY</field>
+            <field name="value">FEDEX_2_DAY</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_fedex_2_day_am" model="fedex.shipment.method">
+            <field name="name">FEDEX 2 DAY AM</field>
+            <field name="value">FEDEX_2_DAY_AM</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_fedex_2_day_freight" model="fedex.shipment.method">
+            <field name="name">FEDEX 2 DAY FREIGHT</field>
+            <field name="value">FEDEX_2_DAY_FREIGHT</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_fedex_3_day_freight" model="fedex.shipment.method">
+            <field name="name">FEDEX 3 DAY FREIGHT</field>
+            <field name="value">FEDEX_3_DAY_FREIGHT</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_fedex_express_saver" model="fedex.shipment.method">
+            <field name="name">FEDEX EXPRESS SAVER</field>
+            <field name="value">FEDEX_EXPRESS_SAVER</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_fedex_first_freight" model="fedex.shipment.method">
+            <field name="name">FEDEX FIRST FREIGHT</field>
+            <field name="value">FEDEX_FIRST_FREIGHT</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_fedex_freight_economy" model="fedex.shipment.method">
+            <field name="name">FEDEX FREIGHT ECONOMY</field>
+            <field name="value">FEDEX_FREIGHT_ECONOMY</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_fedex_freight_priority" model="fedex.shipment.method">
+            <field name="name">FEDEX FREIGHT PRIORITY</field>
+            <field name="value">FEDEX_FREIGHT_PRIORITY</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_fedex_ground" model="fedex.shipment.method">
+            <field name="name">FEDEX GROUND</field>
+            <field name="value">FEDEX_GROUND</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_fedex_overnight" model="fedex.shipment.method">
+            <field name="name">FIRST OVERNIGHT</field>
+            <field name="value">FIRST_OVERNIGHT</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_fedex_ground_home_delivery" model="fedex.shipment.method">
+            <field name="name">GROUND HOME DELIVERY</field>
+            <field name="value">GROUND_HOME_DELIVERY</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_international_economy" model="fedex.shipment.method">
+            <field name="name">INTERNATIONAL ECONOMY</field>
+            <field name="value">INTERNATIONAL_ECONOMY</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_international_economy_freight" model="fedex.shipment.method">
+            <field name="name">INTERNATIONAL ECONOMY FREIGHT</field>
+            <field name="value">INTERNATIONAL_ECONOMY_FREIGHT</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_international_first" model="fedex.shipment.method">
+            <field name="name">INTERNATIONAL FIRST</field>
+            <field name="value">INTERNATIONAL_FIRST</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_international_priority" model="fedex.shipment.method">
+            <field name="name">INTERNATIONAL PRIORITY</field>
+            <field name="value">INTERNATIONAL_PRIORITY</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_international_priority_freight" model="fedex.shipment.method">
+            <field name="name">INTERNATIONAL PRIORITY FREIGHT</field>
+            <field name="value">INTERNATIONAL_PRIORITY_FREIGHT</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_priority_overnight" model="fedex.shipment.method">
+            <field name="name">PRIORITY OVERNIGHT</field>
+            <field name="value">PRIORITY_OVERNIGHT</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_smart_post" model="fedex.shipment.method">
+            <field name="name">SMART POST</field>
+            <field name="value">SMART_POST</field>
+            <field name="method_type">service</field>
+        </record>
+        <record id="service_standard_overnight" model="fedex.shipment.method">
+            <field name="name">STANDARD OVERNIGHT</field>
+            <field name="value">STANDARD_OVERNIGHT</field>
+            <field name="method_type">service</field>
+        </record>
+
+        <!-- Drop OFF Type -->
+        <record id="dropoff_business_service_center" model="fedex.shipment.method">
+            <field name="name">BUSINESS SERVICE CENTER</field>
+            <field name="value">BUSINESS_SERVICE_CENTER</field>
+            <field name="method_type">dropoff</field>
+        </record>
+        <record id="dropoff_drop_box" model="fedex.shipment.method">
+            <field name="name">DROP BOX</field>
+            <field name="value">DROP_BOX</field>
+            <field name="method_type">dropoff</field>
+        </record>
+        <record id="dropoff_regular_pickup" model="fedex.shipment.method">
+            <field name="name">REGULAR PICKUP</field>
+            <field name="value">REGULAR_PICKUP</field>
+            <field name="method_type">dropoff</field>
+        </record>
+        <record id="dropoff_request_courier" model="fedex.shipment.method">
+            <field name="name">REQUEST COURIER</field>
+            <field name="value">REQUEST_COURIER</field>
+            <field name="method_type">dropoff</field>
+        </record>
+        <record id="dropoff_station" model="fedex.shipment.method">
+            <field name="name">STATION</field>
+            <field name="value">STATION</field>
+            <field name="method_type">dropoff</field>
+        </record>
+
+        <!-- Packaging Type-->
+        <record id="packaging_fedex_10kg_box" model="fedex.shipment.method">
+            <field name="name">FEDEX 10KG BOX</field>
+            <field name="value">FEDEX_10KG_BOX</field>
+            <field name="method_type">packaging</field>
+        </record>
+        <record id="packaging_fedex_25kg_box" model="fedex.shipment.method">
+            <field name="name">FEDEX 25KG BOX</field>
+            <field name="value">FEDEX_25KG_BOX</field>
+            <field name="method_type">packaging</field>
+        </record>
+        <record id="packaging_fedex_box" model="fedex.shipment.method">
+            <field name="name">FEDEX BOX</field>
+            <field name="value">FEDEX_BOX</field>
+            <field name="method_type">packaging</field>
+        </record>
+        <record id="packaging_fedex_envelope" model="fedex.shipment.method">
+            <field name="name">FEDEX ENVELOPE</field>
+            <field name="value">FEDEX_ENVELOPE</field>
+            <field name="method_type">packaging</field>
+        </record>
+        <record id="packaging_fedex_pak" model="fedex.shipment.method">
+            <field name="name">FEDEX PAK</field>
+            <field name="value">FEDEX_PAK</field>
+            <field name="method_type">packaging</field>
+        </record>
+        <record id="packaging_fedex_tube" model="fedex.shipment.method">
+            <field name="name">FEDEX TUBE</field>
+            <field name="value">FEDEX_TUBE</field>
+            <field name="method_type">packaging</field>
+        </record>
+        <record id="packaging_your" model="fedex.shipment.method">
+            <field name="name">YOUR PACKAGING</field>
+            <field name="value">YOUR_PACKAGING</field>
+            <field name="method_type">packaging</field>
+        </record>
+    </data>
+</tryton>
+
