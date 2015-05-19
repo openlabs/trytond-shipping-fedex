@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form string="FedEx Labels Generated" col="2">
+    <image name="tryton-attachment" xexpand="0" xfill="0"/>
+    <label string="Shipment labels have been generated via FedEx and save as attachments for the shipment"
+        id="fedex_labels_generate"/>
+    <newline/>
+    <label name="tracking_number"/>
+    <field name="tracking_number"/>
+</form>

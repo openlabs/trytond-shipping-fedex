@@ -1,0 +1,20 @@
+<data>
+    <xpath expr="/form/field[@name='carrier_cost_method']" position="after">
+        <group string="FedEx Configuration" states="{'invisible': Eval('carrier_cost_method') != 'fedex'}" id="fedex_configuration" colspan="4">
+            <label name="fedex_key"/>
+            <field name="fedex_key"/>
+            <label name="fedex_password"/>
+            <field name="fedex_password" widget="password"/>
+            <label name="fedex_account_number"/>
+            <field name="fedex_account_number"/>
+            <label name="fedex_meter_number"/>
+            <field name="fedex_meter_number"/>
+            <label name="fedex_integrator_id"/>
+            <field name="fedex_integrator_id"/>
+            <label name="fedex_product_id"/>
+            <field name="fedex_product_id"/>
+            <label name="fedex_product_version"/>
+            <field name="fedex_product_version"/>
+        </group>
+    </xpath>
+</data>
