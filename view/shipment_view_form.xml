@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <xpath expr="/form/notebook/page[@id=&quot;outgoing_moves&quot;]" position="after">
+        <page string="FedEx" states="{'invisible': Not(Bool(Eval('is_fedex_shipping')))}" id="fedex">
+            <label name="fedex_drop_off_type"/>
+            <field name="fedex_drop_off_type" widget="selection"/>
+            <label name="fedex_packaging_type"/>
+            <field name="fedex_packaging_type" widget="selection"/>
+            <label name="fedex_service_type"/>
+            <field name="fedex_service_type" widget="selection"/>
+        </page>
+    </xpath>
+</data>

@@ -1,0 +1,5 @@
+[run]
+source = trytond.modules.shipping_fedex
+
+[report]
+omit = */tests/*, */setup.py
