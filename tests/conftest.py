@@ -268,6 +268,7 @@ def dataset(request):
         fedex_carrier, = Carrier.create([{
             'party': carrier_party.id,
             'carrier_product': fedex_carrier_product.id,
+            'currency': usd.id,
             'carrier_cost_method': 'fedex',
             'fedex_key': 'w8B7YBVgtfnDgn0k',
             'fedex_account_number': '510088000',

@@ -102,6 +102,8 @@ class ShipmentOut:
             'invalid_state': 'Labels can only be generated when the '
                 'shipment is in Packed or Done states only',
             'wrong_carrier': 'Carrier for selected shipment is not FedEx',
+            'fedex_shipping_cost_error':
+                'Error while getting shipping cost from Fedex: \n\n%s'
         })
         cls.__rpc__.update({
             'make_fedex_labels': RPC(readonly=False, instantiate=0),
@@ -182,7 +184,13 @@ class ShipmentOut:
 
         self.get_fedex_items_details(rate_request)
 
-        response = rate_request.send_request(int(self.id))
+        try:
+            response = rate_request.send_request(int(self.id))
+        except RequestError, exc:
+            self.raise_user_error(
+                'fedex_shipping_cost_error', error_args=(exc.message, )
+            )
+
         currency, = Currency.search([
             ('code', '=', str(
                 response.RateReplyDetails[0].RatedShipmentDetails[0].
