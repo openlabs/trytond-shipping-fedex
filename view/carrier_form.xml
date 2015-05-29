@@ -1,5 +1,6 @@
 <data>
-    <xpath expr="/form/field[@name='carrier_cost_method']" position="after">
+    <xpath expr="/form/field[@name='currency']" position="after">
+        <newline/>
         <group string="FedEx Configuration" states="{'invisible': Eval('carrier_cost_method') != 'fedex'}" id="fedex_configuration" colspan="4">
             <label name="fedex_key"/>
             <field name="fedex_key"/>
