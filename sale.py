@@ -13,6 +13,7 @@ from trytond.pyson import Eval
 from trytond.transaction import Transaction
 
 from fedex import RateService
+from fedex.exceptions import RequestError
 
 __all__ = ['Configuration', 'Sale']
 __metaclass__ = PoolMeta
@@ -81,7 +82,9 @@ class Sale:
         super(Sale, self).__setup__()
         self._error_messages.update({
             'warehouse_address_required': 'Warehouse address is required.',
-            'fedex_settings_missing': 'FedEx settings on this sale are missing'
+            'fedex_settings_missing': 'FedEx settings on this sale are missing',
+            'fedex_rates_error':
+                "Error while getting rates from Fedex: \n\n%s"
         })
         self._buttons.update({
             'update_fedex_shipment_cost': {
@@ -237,7 +240,12 @@ class Sale:
 
         self.get_fedex_items_details(rate_request)
 
-        response = rate_request.send_request(int(self.id))
+        try:
+            response = rate_request.send_request(int(self.id))
+        except RequestError, exc:
+            self.raise_user_error(
+                'fedex_rates_error', error_args=(exc.message, )
+            )
 
         currency, = Currency.search([
             ('code', '=', str(
